@@ -1,0 +1,119 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    height: 100vh;
+    box-sizing: border-box;
+}
+header {
+    display: flex;
+    justify-content: flex-end;
+    background-color: transparent;
+    align-items: center;
+}
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+}
+nav ul {
+    list-style: none;
+}
+nav ul li {
+    display: inline-flex;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+    color: black;
+    margin: 10px;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#user {
+    font-size: 1.3em;
+    background-color: brown;
+    border-radius: 50%;
+    color: white !important;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    align-self: center;
+    align-content: center;
+}
+#user a {
+    margin: auto;
+    color: white;
+    font-weight: bold;
+}
+h1 {
+    font-size: 4em;
+    text-align: center;
+}
+input {
+    box-sizing: border-box;
+    width: 50%;
+    padding: 10px 40px;
+    border-radius: 40px;
+    background-color: white;
+    border:#b4afaf solid 1px;
+}
+input::before {
+    content: '';
+  position: absolute;
+  border-color: #009933;
+  border-style: solid;
+  border-width: 0 0.3em 0.25em 0;
+  height: 1em;
+  top: 1.3em;
+  left: 0.6em;
+  margin-top: -1em;
+  transform: rotate(45deg);
+  width: 0.5em;
+}
+
+footer {
+    position:fixed;
+    color: #363636;
+    background-color: #b4afaf;
+    bottom: 0;
+    right: 0;
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.top {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 3%;
+    align-items: center;
+    border-bottom: #363636 solid 1px;
+}
+.bottom {
+    padding: 0 3%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.bottom div > ul > li {
+    display: inline;
+    padding: 0;
+}
+.bottom div > ul > li > a {
+    color: #363636;
+    text-decoration: none;
+    margin: 5px;
+}
+.bottom div > ul > li > a:hover {
+    text-decoration: underline;
+}
+.bottom div > ul {
+    list-style: none;
+    padding: 0;
+}
